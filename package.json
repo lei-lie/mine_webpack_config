@@ -1,0 +1,26 @@
+{
+  "name": "mine_webpack_config",
+  "version": "1.0.0",
+  "description": "webpack 配置",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lei-lie/mine_webpack_config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lei-lie/mine_webpack_config/issues"
+  },
+  "homepage": "https://github.com/lei-lie/mine_webpack_config#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
