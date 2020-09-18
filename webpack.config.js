@@ -29,6 +29,54 @@ module.exports = {
       //     },
       //   ],
       // },
+      // {
+      //   test:/\.less$/i,
+      //   use:[{
+      //     loader:'style-loader'
+      //   },
+      //   {
+      //     loader:'css-loader'
+      //   },
+      //   {
+      //     loader:'less-loader'
+      //   }]
+      // },
+      {
+        test:/\.less$/i,
+        use:[{
+          loader:MiniCssExtractPlugin.loader
+        },
+        {
+          loader:'css-loader'
+        },
+        {
+          loader:'less-loader'
+        }]
+      },
+      // {
+      //   test:/\.s[ac]ss$/i,
+      //   use:[{
+      //     loader:'style-loader'
+      //   },
+      //   {
+      //     loader:'css-loader'
+      //   },
+      //   {
+      //     loader:'sass-loader'
+      //   }]
+      // },
+      {
+        test:/\.s[ac]ss$/i,
+        use:[{
+          loader:MiniCssExtractPlugin.loader
+        },
+        {
+          loader:'css-loader'
+        },
+        {
+          loader:'sass-loader'
+        }]
+      }
     ],
   },
   devServer: {
