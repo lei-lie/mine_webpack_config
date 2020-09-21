@@ -76,6 +76,31 @@ module.exports = {
         {
           loader:'sass-loader'
         }]
+      },
+      {
+        test:/\.(jpe?g|png|gif)$/i,
+        use: [{
+          loader:'file-loader'
+        }]
+      },
+      {
+        test:/\.(jpe?g|png|gif)/i,
+        use:[{
+          loader:'url-loader',
+          options: {
+            limit: 8192,
+          }
+        }]
+      },
+      {
+        test:/\.jsx?$/,// 支持 js 和 jsx 文件，使用 react 时需要
+        exclude: /node_modules/,
+        use:[{
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        }]
       }
     ],
   },
