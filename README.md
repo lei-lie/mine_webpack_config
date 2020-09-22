@@ -1,5 +1,7 @@
 # mine_webpack_config
 `webpack` 配置
+## 声明
+学习资料来源于掘金小册[使用webpack定制前端开发环境](https://juejin.im/book/6844733709808041992)
 ## webpack安装
 1.创建一个新的文件夹
 ```
